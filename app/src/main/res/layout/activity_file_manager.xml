@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FileManager">
+   <ScrollView android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Tìm ảnh trong thư mục"
+               android:id="@+id/bt_search"
+               android:layout_gravity="center"/>
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:id="@+id/iv_image"/>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Scan mã QR"
+               android:id="@+id/bt_convert"
+               android:layout_gravity="center"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tv_content"
+               android:text="Chưa dịch mã"
+               android:textSize="20dp"
+               android:textColor="@color/black"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"/>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>
